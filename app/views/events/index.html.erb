@@ -1,4 +1,6 @@
+<% if user_signed_in? && %>
 <%= link_to 'イベント追加', new_event_path %>
+<% end %>
 <%= month_calendar events: @events do |date, events| %>
   <%= date.day %>
 
